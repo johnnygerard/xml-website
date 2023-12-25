@@ -7,9 +7,11 @@
       </earth>
       <svg width="100%" height="100%"
          style="border-radius: 50%;"
-         onclick="location.href='https://science.nasa.gov/sun/'"
          xmlns="http://www.w3.org/2000/svg">
-         <title>Click to visit NASA's Sun page!</title>
+         <title>Visit NASA's Sun page!</title>
+         <a href="https://science.nasa.gov/sun/">
+            <circle cx="50%" cy="50%" r="50%" fill="transparent" />
+         </a>
       </svg>
    </sun>
    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
