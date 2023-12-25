@@ -1,0 +1,81 @@
+space {
+  --earth-orbit-radius: 300px;
+  --moon-orbit-radius: 50px;
+
+  background-color: black;
+  height: 100vh;
+
+  /* Center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+sun {
+  --diameter: 200px;
+
+  /* Center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: 0 0 10px white;
+
+  /* Earth's orbit */
+  outline: 1px dashed gray;
+  outline-offset: calc(var(--earth-orbit-radius) - var(--diameter) / 2);
+}
+
+sun:hover {
+  box-shadow: 0 0 30px white;
+  transition: box-shadow 0.2s ease-out;
+  cursor: pointer;
+}
+
+earth {
+  --orbit-radius: var(--earth-orbit-radius);
+  --diameter: 50px;
+
+  /* Center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+  background-color: blue;
+  animation: orbit 16s linear infinite;
+
+  /* Moon's orbit */
+  outline: 1px dashed gray;
+  outline-offset: calc(var(--moon-orbit-radius) - var(--diameter) / 2);
+}
+
+moon {
+  --orbit-radius: var(--moon-orbit-radius);
+  --diameter: 16px;
+
+  position: absolute;
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+  background-color: gray;
+  animation: orbit 6s linear infinite;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0) translateX(var(--orbit-radius));
+  }
+
+  to {
+    transform: rotate(1turn) translateX(var(--orbit-radius));
+  }
+}
