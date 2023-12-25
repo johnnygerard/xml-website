@@ -15,9 +15,9 @@
       </svg>
    </sun>
    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
-      <script>
+      <script><![CDATA[
          console.log('This XML page can run JavaScript!');
          console.log('Source code repository:', 'https://github.com/johnnygerard/xml-website');
-      </script>
+      ]]></script>
    </svg>
 </space>
