@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="index.css"?>
 <space>
+  <earth>
+    <moon></moon>
+  </earth>
   <sun>
-    <earth>
-      <moon></moon>
-    </earth>
     <svg width="100%" height="100%"
       style="border-radius: 50%"
       xmlns="http://www.w3.org/2000/svg">

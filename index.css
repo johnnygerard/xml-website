@@ -14,12 +14,6 @@ space {
 sun {
   --diameter: 200px;
 
-  /* Center content */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
   width: var(--diameter);
   height: var(--diameter);
   border-radius: 50%;
@@ -34,7 +28,6 @@ sun {
 sun:hover {
   box-shadow: 0 0 30px white;
   transition: box-shadow 0.2s ease-out;
-  cursor: pointer;
 }
 
 earth {
@@ -52,6 +45,7 @@ earth {
   border-radius: 50%;
   background-color: blue;
   animation: orbit 16s linear infinite;
+  z-index: 1;
 
   /* Moon's orbit */
   outline: 1px dashed gray;
