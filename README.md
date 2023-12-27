@@ -8,7 +8,7 @@ The `xml-stylesheet` processing instruction is used to associate a CSS styleshee
 Thanks to SVG elements, it is possible to add hyperlinks and run some JavaScript code.
 
 ## Screenshot
-![Screenshot](screenshot.png)
+[![Screenshot](screenshot.png)](https://xml-website.jgerard.dev/)
 
 ## Credits
 Favicon made by [Md Tanvirul Haque](https://www.flaticon.com/authors/md-tanvirul-haque) from [www.flaticon.com](https://www.flaticon.com/)
